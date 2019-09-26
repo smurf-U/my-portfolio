@@ -1,0 +1,115 @@
+
+<section class="home">
+    <div class="container">
+        <div class="row">
+            {% set x_card_width_class = "col-12" %}
+            <div
+                    class='{% if card_width_class %} {{card_width_class}} {% else %} {{x_card_width_class}}  {% endif%} main_card'>
+                <div class="card" id="home-card">
+                    <div class="card-body">
+                        <div class="profile ">
+                            <div class="profile-content">
+                                <div class="slide"
+                                     style="background-image: url({{url_for('static', filename='img/bg.jpg')}});"></div>
+                                <div class="image">
+                                    <a href="/">
+                                        <img class="img img-fluid"
+                                             src="{{url_for('static', filename='img/14.format_png.resize_200x.png') }}"
+                                             alt="Kaushal Prajapati"/>
+                                    </a>
+                                </div>
+                                <div class="title">Kaushal Prajapati</div>
+                                <div class="subtitle subtitle-typed">Software
+                                    Developer
+                                </div>
+                                <span class="typed-cursor">|</span>
+                                <div class="social">
+                                    <a target="_blank"
+                                       href="https://twitter.com/kbmprajapati">
+                                        <span class="fa fa-twitter"></span>
+                                    </a>
+                                    <a target="_blank"
+                                       href="https://www.linkedin.com/in/kaushal-prajapati-073b5499">
+                                        <span class="fa fa-linkedin"></span>
+                                    </a>
+                                    <a target="_blank"
+                                       href="https://github.com/smurf-U">
+                                        <span class="fa fa-github"></span>
+                                    </a>
+                                    <a target="_blank"
+                                       href="https://stackoverflow.com/users/5886918/kaushal-prajapati">
+                                        <span class="fa fa-stack-overflow"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="main-menu-fixed">
+                                {% import "layout/_menubar.html" as
+                                active_menus %}
+                                <div class="main-menu">
+                                    <div class="menu-main-menu-container">
+                                        <ul id="menu-main-menu" class="menu">
+                                            <li>
+                                                <a
+                                                        class="{{ active_menus.is_active('website.about') }}"
+                                                        href="{{ url_for('website.about') }}">About</a>
+                                            </li>
+                                            <li>
+                                                <a class="{{ active_menus.is_active('website.resume') }}"
+                                                        href="{{ url_for('website.resume') }}">Resume</a>
+                                            </li>
+                                            <li>
+                                                <a class="{{ active_menus.is_active('website.works') }}"
+                                                        href="{{ url_for('website.works') }}">Works</a>
+                                            </li>
+                                            <li>
+                                                <a class="{{ active_menus.is_active('website.blog') }}"
+                                                        href="{{ url_for('website.blog') }}">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a class="{{ active_menus.is_active('website.contact') }}"
+                                                        href="{{ url_for('website.contact') }}">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lnks mb-2">
+                                <a href="#" class="lnk">
+                                    <span class="text">Download CV</span>
+                                    <span class="fa fa-download"></span>
+                                </a>
+                                <a href="mailto:kbprajapati@live.com"
+                                   class="lnk">
+                                    <span class="text">Contact Me</span>
+                                    <span class="fa fa-paper-plane-o"></span>
+                                </a>
+                            </div>
+                            <div class="lnks mb-2">
+                                <a id="lnk-view-menu"
+                                   class="lnk lnk-view-menu mt16">
+                                    <svg class="ham hamRotate ham8"
+                                         viewBox="0 0 100 100" width="40">
+                                        <path
+                                                class="line top"
+                                                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"/>
+                                        <path
+                                                class="line middle"
+                                                d="m 30,50 h 40"/>
+                                        <path
+                                                class="line bottom"
+                                                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"/>
+                                    </svg>
+
+                                    <!--<span class="text"
+                                          data-text-open="Close">Menu</span>-->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% block details_card %}
+            {% endblock %}
+        </div>
+    </div>
+</section>

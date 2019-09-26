@@ -1,0 +1,61 @@
+.details_card{
+    .card{
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+//         left: 560px;
+//         right: 0;
+//         top: 15px;
+//         bottom: 15px;
+        width: auto;
+        height: auto;
+        background: #fff;
+        transform-origin: center left;
+//         opacity: 0;
+//         visibility: hidden;
+        z-index: 8;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 0 4px 4px 0;
+        -khtml-border-radius: 4px;
+        transition: visibility 1s linear,opacity 0s linear;
+        -moz-transition: visibility 1s linear,opacity 0s linear;
+        -webkit-transition: visibility 1s linear,opacity 0s linear;
+        -o-transition: visibility 1s linear,opacity 0s linear;
+        &:after, &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 30px;
+            background: #fff;
+            z-index: 10;
+        }
+        &:after{
+            top: auto;
+            bottom: 0;
+        }
+        .content{
+            margin: 0 0 40px;
+            position: relative;
+            .title{
+                margin: 0;
+                padding: 0 0 30px;
+                position: relative;
+                font-size: 20px;
+                color: #323232;
+                line-height: 21px;
+                min-height: 51px;
+                font-weight: 600;
+                z-index: 2;
+            }
+            .row{
+                margin: 0 -30px;
+                position: relative;
+                font-size: 0;
+            }
+        }
+    }
+
+}

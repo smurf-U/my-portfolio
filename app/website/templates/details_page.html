@@ -1,0 +1,207 @@
+{% set card_width_class = "col-md-6 col-sm-6 col-xs-12 pull-left" %}
+{% extends 'main_profile.html' %}
+{% block details_card %}
+<div
+        class='{% if card_width_class %} {{card_width_class}} {% else %} {{x_card_width_class}} {% endif%} pull-right details_card'>
+    <div class="card active" id="about-card">
+        <div class="card-body">
+            <div class="content about">
+                <div class="title"><span class="first-word">About</span> Me
+                </div>
+                <div class="row">
+                    <div class="col col-md-6 col-sm-12 col-xs-12 border-line-v">
+                        <div class="text-box"><p><strong>Hello! I’m Ryan
+                            Adlard.</strong><br> Web designer from USA,
+                            California. I have rich experience in web site
+                            design and building, also I am good at wordpress. I
+                            love to talk with you about our unique.</p></div>
+                    </div>
+                    <div class="col col-md-6 col-sm-12 col-xs-12 border-line-v">
+                        <div class="info-list">
+                            <ul>
+                                <li><strong>Age:</strong> 24</li>
+                                <li><strong>Residence:</strong> USA</li>
+                                <li><strong>Freelance:</strong> Available</li>
+                                <li><strong>Address:</strong> California, USA
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="content services">
+                <div class="title"><span class="first-word">My</span> Services
+                </div>
+                <div class="row service-items border-line-v">
+                    <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                        <div class="service-item">
+                            <div class="icon"><span
+                                    class="ion ion-code"></span></div>
+                            <div class="name">Web Development</div>
+                            <p>Modern and mobile-ready website that will help
+                                you reach all of your marketing.</p></div>
+                    </div>
+                    <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                        <div class="service-item">
+                            <div class="icon"><span
+                                    class="ion ion-music-note"></span></div>
+                            <div class="name">Music Writing</div>
+                            <p>Music copying, writing, creating, transcription,
+                                arranging and composition services.</p></div>
+                    </div>
+                    <div class="col col-d-6 col-t-6 col-m-12">
+                        <div class="service-item">
+                            <div class="icon"><span
+                                    class="ion ion-speakerphone"></span></div>
+                            <div class="name">Advetising</div>
+                            <p>Advertising services include television, radio,
+                                print, mail, and web apps.</p></div>
+                    </div>
+                    <div class="col col-d-6 col-t-6 col-m-12">
+                        <div class="service-item">
+                            <div class="icon"><span
+                                    class="ion ion-ios-game-controller-b"></span>
+                            </div>
+                            <div class="name">Game Development</div>
+                            <p>Developing memorable and unique mobile android,
+                                ios and video games.</p></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="content pricing">
+                <div class="title">
+                    <div class="first-letter">Pricing</div>
+                </div>
+                <div class="row pricing-items">
+                    <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                        <div class="pricing-item">
+                            <div class="icon"><i
+                                    class="ion ion-battery-low"></i></div>
+                            <div class="name">Basic</div>
+                            <div class="amount"><span class="dollar">$</span>
+                                <span class="number">22</span> <span
+                                        class="period">hour</span></div>
+                            <div class="feature-list">
+                                <ul>
+                                    <li> Web Development</li>
+                                    <li> Advetising</li>
+                                    <li> Game Development</li>
+                                    <li class="disable"> Music Writing</li>
+                                    <li class="disable"> Photography <strong>new</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="lnks"><a href="#" class="lnk"> <span
+                                    class="text">Buy Basic</span> <i
+                                    class="ion ion-battery-low"></i> </a></div>
+                        </div>
+                    </div>
+                    <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                        <div class="pricing-item">
+                            <div class="icon"><i
+                                    class="ion ion-battery-full"></i></div>
+                            <div class="name">Pro</div>
+                            <div class="amount"><span class="dollar">$</span>
+                                <span class="number">48</span> <span
+                                        class="period">hour</span></div>
+                            <div class="feature-list">
+                                <ul>
+                                    <li> Web Development</li>
+                                    <li> Advetising</li>
+                                    <li> Game Development</li>
+                                    <li> Music Writing</li>
+                                    <li> Photography <strong>new</strong></li>
+                                </ul>
+                            </div>
+                            <div class="lnks"><a href="#" class="lnk"> <span
+                                    class="text">Buy Pro</span> <i
+                                    class="ion ion-battery-full"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="content fuct">
+                <div class="title"><span class="first-word">Fun</span> Facts
+                </div>
+                <div class="row fuct-items">
+                    <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                        <div class="fuct-item">
+                            <div class="icon"><span
+                                    class="ion ion-disc"></span></div>
+                            <div class="name">80 Albumes Listened</div>
+                        </div>
+                    </div>
+                    <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                        <div class="fuct-item">
+                            <div class="icon"><span
+                                    class="ion ion-trophy"></span></div>
+                            <div class="name">15 Awards Won</div>
+                        </div>
+                    </div>
+                    <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                        <div class="fuct-item">
+                            <div class="icon"><span
+                                    class="ion ion-coffee"></span></div>
+                            <div class="name">1 000 Cups Of Coffee</div>
+                        </div>
+                    </div>
+                    <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                        <div class="fuct-item">
+                            <div class="icon"><span
+                                    class="ion ion-flag"></span></div>
+                            <div class="name">10 Countries Visited</div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="content clients">
+                <div class="title">
+                    <div class="first-letter">Clients</div>
+                </div>
+                <div class="row client-items">
+                    <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                        <div class="client-item">
+                            <div class="image"><a target="_blank"
+                                                  href="https://ryan.beshley.com">
+                                <img src="https://ryancv.bslthemes.com/v2/wp-content/uploads/2018/11/client_1-92x92.png"
+                                     alt="Client"> </a></div>
+                        </div>
+                    </div>
+                    <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                        <div class="client-item">
+                            <div class="image"><a target="_blank"
+                                                  href="https://ryan.beshley.com">
+                                <img src="https://ryancv.bslthemes.com/v2/wp-content/uploads/2018/11/client_2-92x92.png"
+                                     alt="Client"> </a></div>
+                        </div>
+                    </div>
+                    <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                        <div class="client-item">
+                            <div class="image"><a target="_blank"
+                                                  href="https://ryan.beshley.com">
+                                <img src="https://ryancv.bslthemes.com/v2/wp-content/uploads/2018/11/client_3-92x92.png"
+                                     alt="Client"> </a></div>
+                        </div>
+                    </div>
+                    <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                        <div class="client-item">
+                            <div class="image"><a target="_blank"
+                                                  href="https://ryan.beshley.com">
+                                <img src="https://ryancv.bslthemes.com/v2/wp-content/uploads/2018/11/client_4-92x92.png"
+                                     alt="Client"> </a></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+

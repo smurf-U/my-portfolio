@@ -1,0 +1,5 @@
+{% macro is_active(segment) %}
+    {% if request.path == url_for(segment) %}
+        active
+    {% endif %}
+{% endmacro %}
