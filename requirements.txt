@@ -8,6 +8,5 @@ jsmin
 lesscpy
 libsass
 cssmin
-
-
-
+flask_assets
+passlib
