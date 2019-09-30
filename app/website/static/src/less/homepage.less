@@ -1,0 +1,146 @@
+@import 'color.less';
+
+.odoo{
+    color: #875A7B;
+    font-weight: bold;
+}
+.django{
+    color: #103e2e;
+    font-weight: bold;
+}
+.flask{
+    color: @gray-light;
+    font-weight: bold;
+}
+.python{
+    color: #3b78a8;
+    font-weight: bold;
+}
+.hero-wrap{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        opacity: .7;
+        padding: 48px 0;
+        background: #fff;
+        z-index: 0;
+    }
+    .align-items-center {
+        -webkit-box-align: center!important;
+        -ms-flex-align: center!important;
+        align-items: center!important;
+        padding: 48px 0;
+    }
+    .justify-content-center {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
+    .d-flex {
+        display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+    }
+    .text {
+        z-index: 1;
+        font-size: 18px;
+        font-weight: 500;
+        .img{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+        }
+        .subheading {
+            font-size: 24px;
+            color: #bfbfbf;
+            font-weight: 300;
+        }
+        .desc{
+            p.summury{
+                color:#9c9696
+            }
+        }
+    }
+
+}
+.hero-wrap, .img, .blog-img, .user-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#skill{
+    .main_title{
+        text-align: center;
+        padding: 30px 0px;
+        h2{
+            font-size: 36px;
+            text-transform: uppercase;
+            text-align: center;
+            display: inline-block;
+            line-height: 58px;
+            padding: 0px 23px;
+        }
+    }
+    .skill_text {
+        padding-bottom: 28px;
+        p{
+            font-size: 13px;
+            line-height: 24px;
+        }
+    }
+    .single_skill{
+        h4{
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-bottom: 5px;
+            span{
+                font-size: 12px;
+            }
+        }
+        .progress {
+            margin-bottom: 30px;
+            height: 30px;
+            border-radius: 0px;
+            border: none;
+            box-shadow: none;
+            text-shadow: none;
+            background: lighten(@gray-light, 50%);
+            .progress-bar {
+                background: @primary-color;
+                background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+                box-shadow: none;
+                background-size: 1rem 1rem;
+                .progress_parcent {
+                    font-size: 16px;
+                    color: #fff;
+                    line-height: 30px;
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 676px){
+    .hero-wrap .align-items-center{
+        padding-top: 96px;
+    }
+}

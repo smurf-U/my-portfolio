@@ -1,0 +1,66 @@
+{% import "layout/macro/_menubar.html" as active_menus %}
+<div class="container px-md-5">
+    <div class="row mb-5">
+        <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+                <h2 class="ftco-heading-2">Links #</h2>
+                <ul class="list-unstyled categories">
+                    <li>
+                        <a class="{{ active_menus.is_active('website.about') }}"
+                           href="{{ url_for('website.about') }}">About</a>
+                    </li>
+                    <li>
+                        <a
+                                class="{{ active_menus.is_active('website.works') }}"
+                           href="{{ url_for('website.works') }}">Works</a>
+                    </li>
+                    <li>
+                        <a class="{{ active_menus.is_active('website.resume') }}"
+                           href="{{ url_for('website.resume') }}">Resume</a>
+                    </li>
+                    <li>
+                        <a class="{{ active_menus.is_active('website.contact') }}"
+                           href="{{ url_for('website.contact') }}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">Have a Questions?</h2>
+                <div class="block-23 mb-3">
+                    <ul>
+                        <li><span class="fa fa-map-marker"></span><span
+                                class="text">7 Shakti Nager Society, Opp
+                            . Mandakini Flats, K. K. Nagar Road,
+                            Ghatlodia, Ahmedabad, India</span>
+                        </li>
+                        <li><a href="tel://+91 8000 839 335"><span
+                                class="fa fa-phone"></span><span
+                                class="text">+91 8000 839 335</span></a></li>
+                        <li><a href="mailto:kbprajapati@live.com"><span
+                                class="fa fa-envelope"></span><span
+                                class="text">kbprajapati@live.com</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 copyright">
+            <p>
+                Copyright ©
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+
+
+                </script>
+                All rights reserved | This template is made with <i
+                    class="fa fa-heart" aria-hidden="true"></i> by <a
+                    href="/" target="_blank">Kaushal
+                Prajapati</a>
+            </p>
+        </div>
+    </div>
+</div>

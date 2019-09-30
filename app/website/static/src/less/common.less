@@ -1,0 +1,44 @@
+@import 'color.less';
+
+@font-stack: Montserrat, Poppins, Helvetica, sans-serif;
+
+body {
+  font: 100% @font-stack;
+//   background-color: @primary-color;
+    color: lighten(@gray-light, 20%);
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 500;
+    background: #fff;
+  a{
+    color: @primary-color;
+    text-decoration: none;
+    &:hover{
+    text-decoration: none;
+    color: @secondary-color;
+    }
+  }
+  h1,h2,h3,h4,h5,h6{
+    line-height: 1.5;
+    color: rgba(0,0,0,.8);
+    font-weight: 400;
+    font-family: poppins ,sans-serif;
+  }
+}
+.mt16{
+    margin-top: 16px;
+}
+.mb16{
+    margin-bottom: 16px;
+}
+.btn{
+    border-radius: 30px;
+}
+.btn-primary{
+    color: @primary-color;
+    background: #fff;
+    border: 1px solid @primary-color;
+}
+.form-control{
+    border-radius:0px;
+}

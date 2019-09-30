@@ -1,0 +1,63 @@
+<!--{% import "layout/macro/_menubar.html" as active_menus %}-->
+<script>
+  $(document).ready(function () {
+    $(".sidenav nav a.active").removeClass("active");
+    $("a[href='"+ window.location.pathname +"']").addClass("active");
+  })
+
+</script>
+<div class="sidenav bg-light text-center">
+    <h1 id="colorlib-logo"
+        class="hidden-xs"><a href="/">kaushal<span>.</span></a></h1>
+    <nav>
+        <ul>
+            <li>
+                <a class="{{ active_menus.is_active('website.about') }}"
+                   href="{{ url_for('website.about') }}">About</a>
+            </li>
+            <li>
+                <a class="{{ active_menus.is_active('website.works') }}"
+                   href="{{ url_for('website.works') }}">Works</a>
+            </li>
+            <li>
+                <a class="{{ active_menus.is_active('website.resume') }}"
+                   href="{{url_for('static', filename='resume.pdf')}}">Resume
+                </a>
+            </li>
+            <li>
+                <a class="{{ active_menus.is_active('website.contact') }}"
+                   href="{{ url_for('website.contact') }}">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="colorlib-footer">
+        <p>
+            Copyright ©
+            <script type="text/javascript" async=""
+                    src="https://www.google-analytics.com/analytics.js"></script>
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | This template is made with <i
+                class="fa fa-heart" aria-hidden="true"></i> by <a
+                href="/" target="_blank">Kaushal
+            Prajapati</a>
+        </p>
+        <ul>
+            <li><a href="https://www.facebook.com/kbpra"><i
+                    class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/kbmprajapati"><i
+                    class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/kbmprajapati/"><i
+                    class="fa fa-instagram"></i></a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/kaushal-prajapati-073b5499/"><i
+                        class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/smurf-U"><i
+                    class="fa fa-github"></i></a></li>
+            <li><a
+                    href="skype:kbprajapati@live.com?chat"><i
+                    class="fa fa-skype"></i></a></li>
+        </ul>
+    </div>
+</div>

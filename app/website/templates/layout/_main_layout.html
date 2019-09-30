@@ -1,0 +1,22 @@
+{% extends 'layout/base.html' %}
+{% block page_header %}
+{% import 'header.html' as header %}
+{{header}}
+{% import 'layout/_sidebar.html' as sidebar %}
+{{sidebar}}
+{% endblock %}
+{% block page_body %}
+<div class="main">
+    {% block main_body %}
+    {% endblock %}
+</div>
+{%endblock%}
+
+{% block page_footer %}
+{% import 'layout/_footer.html' as footer %}
+{{footer}}
+{% endblock %}
+
+{% block footer_class %}
+ftco-footer ftco-bg-dark ftco-section
+{% endblock %}

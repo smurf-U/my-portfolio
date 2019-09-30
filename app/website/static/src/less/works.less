@@ -1,0 +1,56 @@
+@import 'color.less';
+.fancy-collapse-panel .card > .card-header {
+  padding: 0; }
+
+.card-header a {
+  padding: 20px 25px;
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: @primary-color;
+  color: #fff;
+  position: relative;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+  &:hover{
+  color: #fff;
+  }
+  }
+
+.card {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none; }
+
+.card-header a:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f068";
+  position: absolute;
+  right: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  top: 50%;
+  line-height: 1;
+  margin-top: -7px; }
+
+.card-header a.collapsed:after {
+  content: "\f067"; }
+
+.card-header a.collapsed {
+  background: #f2f3f7;
+  border: 1px solid lighten(@gray-light, 30%) !important;
+  color: @gray-light; }
+
+.card-body {
+  padding: 1.5em;
+  margin-top: 5px;
+  border: 1px solid lighten(@gray-light, 30%) !important; }

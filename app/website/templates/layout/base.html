@@ -1,0 +1,90 @@
+<html lang='{{ "en-us" }}'>
+<head>
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+    <!-- Meta Data -->
+    {% block head_meta %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {% endblock %}
+
+    <!-- CSS Block-->
+    {% block head_css %}
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='lib/bootstrap-4.3.1/css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='fonts/font.css') }}"/>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='fonts/stroke/pe-icon-7-stroke.css') }}"/>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='lib/fontawesome/css/font-awesome.css') }}"/>
+
+    <!--<link rel="stylesheet"
+          href="{{ url_for('static', filename='src/scss/homepage.scss') }}"/>-->
+
+    <!-- JS Block-->
+    {% block head_js %}
+
+    {% assets "assets_frontend_js" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+    <script>
+            $(document).ready(function(){
+                $.fakeLoader({
+                    timeToHide:3500,
+                    bgColor:"#fff",
+                    spinner:"spinner3"
+                });
+            });
+
+
+    </script>
+    {% endblock %}
+
+    {% assets "assets_frontend_css" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}"/>
+    {% endassets %}
+    {% endblock %}
+
+    {% block head %}
+    {% endblock %}
+</head>
+<body class="{% block bodyclass %}{% endblock %}">
+<div id="wrap">
+    <header>
+        {% block page_header %}
+            {% include 'header.html' %}
+        {% endblock %}
+    </header>
+    <div class="page_wrap">
+        {% block page_body %}
+        {% endblock %}
+        <div class="background gradient">
+            <!--<div id="particles-js"></div>-->
+        </div>
+        <div class="fakeloader"></div>
+    </div>
+    <footer class="{% block footer_class %} {% endblock %}">
+        {% block page_footer %}
+        <div id="footer"></div>
+        {% endblock %}
+    </footer>
+</div>
+<!-- JS Block-->
+{% block footer_js %}
+<script type="text/javascript"
+        src="{{ url_for('static', filename='lib/particles/particles.js') }}"></script>
+<script type="text/javascript"
+        src="{{ url_for('static', filename='src/js/app.js') }}"></script>
+<script type="text/javascript"
+        src="{{ url_for('static', filename='src/js/menu.js') }}"></script>
+
+{% endblock %}
+</body>
+</html>
